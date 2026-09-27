@@ -1,0 +1,30 @@
+{
+  "name": "inverness-roofing",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir ../dist-ssr && node scripts/prerender.mjs",
+    "preview": "vite preview",
+    "lint:us-spelling": "node scripts/us-spelling.mjs",
+    "audit": "node scripts/audit.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "wouter": "^3.3.5",
+    "lucide-react": "^0.468.0",
+    "framer-motion": "^12.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tailwindcss": "^4.1.0",
+    "tw-animate-css": "^1.2.5",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0"
+  }
+}
